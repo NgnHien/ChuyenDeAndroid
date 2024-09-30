@@ -1,11 +1,13 @@
-package com.example.socialmediatdcproject;
+package com.example.socialmediatdcproject.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -13,6 +15,8 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.socialmediatdcproject.R;
 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -143,6 +147,13 @@ public class UploadProfileActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {}
+        });
+
+        // Xử lý chuyển trang qua trang home
+        Button buttonUploadProfile = findViewById(R.id.button_upload_profile);
+        buttonUploadProfile.setOnClickListener(v -> {
+            Intent intent = new Intent(UploadProfileActivity.this, SharedActivity.class);
+            startActivity(intent);
         });
     }
 

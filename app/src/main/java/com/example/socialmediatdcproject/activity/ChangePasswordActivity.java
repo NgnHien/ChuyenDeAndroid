@@ -1,12 +1,12 @@
-package com.example.socialmediatdcproject;
+package com.example.socialmediatdcproject.activity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.socialmediatdcproject.R;
 
 public class ChangePasswordActivity extends AppCompatActivity {
     @Override
