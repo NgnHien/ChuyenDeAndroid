@@ -50,12 +50,6 @@ public class SharedActivity extends AppCompatActivity {
                 .circleCrop()
                 .into(imageView);
 
-//        ImageView postImage = findViewById(R.id.post_image);
-//        Glide.with(this)
-//                .load(R.drawable.avatar_user)
-//                .circleCrop()
-//                .into(postImage);
-
         // Xử lý sự kiện nhấn vào icon 3 gạch để mở Navigation Drawer
         ImageButton navigationButton = findViewById(R.id.icon_navigation);
         navigationButton.setOnClickListener(v -> {
@@ -130,8 +124,6 @@ public class SharedActivity extends AppCompatActivity {
                         fragment = new HomeFragment();
                         // Đặt chiều cao nếu là trang chủ thì là 100
                         changeFrameLayoutHeight(200);
-
-
                         break;
                     case 1:
                         // Phòng đào tạo
